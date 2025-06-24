@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUMDes Nanggerang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-[#F5DEB3]">
+    <!-- Navigation -->
+    <nav class="bg-[#8B4513] text-white fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold font-playfair">BUMDes Nanggerang</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="nav-link hover:text-[#F5DEB3] transition-colors">Beranda</a>
+                    <a href="#tentang" class="nav-link hover:text-[#F5DEB3] transition-colors">Tentang BUMDes</a>
+                    <a href="#produk" class="nav-link hover:text-[#F5DEB3] transition-colors">Rumah BUMDes</a>
+                    <a href="#hadiah" class="nav-link hover:text-[#F5DEB3] transition-colors">Hadiah dan Acara</a>
+                    <a href="#kontak" class="nav-link hover:text-[#F5DEB3] transition-colors">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" onclick="toggleMobileMenu()">
+                    <div class="space-y-1.5">
+                        <span class="block w-6 h-0.5 bg-current"></span>
+                        <span class="block w-6 h-0.5 bg-current"></span>
+                        <span class="block w-6 h-0.5 bg-current"></span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <a href="#beranda" class="block py-2 hover:text-[#F5DEB3] transition-colors">Beranda</a>
+                <a href="#tentang" class="block py-2 hover:text-[#F5DEB3] transition-colors">Tentang BUMDes</a>
+                <a href="#produk" class="block py-2 hover:text-[#F5DEB3] transition-colors">Rumah BUMDes</a>
+                <a href="#hadiah" class="block py-2 hover:text-[#F5DEB3] transition-colors">Hadiah dan Acara</a>
+                <a href="#kontak" class="block py-2 hover:text-[#F5DEB3] transition-colors">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-section">
+        <div class="text-center animate-fade-in">
+            <h1 class="text-6xl font-playfair mb-4 text-white">THE GUNUNGAN</h1>
+            <p class="text-2xl mb-8 font-playfair text-white">GIFT BOX</p>
+            <button class="btn-primary">
+                Explore Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produk" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-playfair text-[#8B4513] text-center mb-12">Produk Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Cards -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-[#8B4513]/10"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[#8B4513] mb-2">Kerajinan Borobo</h3>
+                        <p class="text-[#8B4513] mb-4">Rp15.000</p>
+                        <button class="btn-primary w-full">Tambahkan ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-[#8B4513]/10"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[#8B4513] mb-2">Rengginang Pedas</h3>
+                        <p class="text-[#8B4513] mb-4">Rp20.000</p>
+                        <button class="btn-primary w-full">Tambahkan ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="h-48 bg-[#8B4513]/10"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-[#8B4513] mb-2">Keripik Singkong</h3>
+                        <p class="text-[#8B4513] mb-4">Rp10.000</p>
+                        <button class="btn-primary w-full">Tambahkan ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="about-section py-16 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-playfair mb-6">Tentang BUMDes</h2>
+                <p class="mb-8 leading-relaxed">
+                    BUMDes Nanggerang adalah Badan Usaha Milik Desa yang bergerak dalam pengembangan ekonomi lokal
+                    melalui berbagai produk unggulan desa. Kami berkomitmen untuk mengembangkan potensi desa dan
+                    mensejahterakan masyarakat melalui produk-produk berkualitas dan pelayanan terbaik.
+                </p>
+                <button class="btn-primary border-2 border-[#F5DEB3]">
+                    Pelajari Lebih Lanjut
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#8B4513] text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-playfair font-semibold mb-4">BUMDes Nanggerang</h3>
+                    <p class="text-sm opacity-80">
+                        Cianjur - Tasikmalaya<br>
+                        Jawa Barat, Indonesia
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-semibold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#beranda" class="footer-link opacity-80">Beranda</a></li>
+                        <li><a href="#tentang" class="footer-link opacity-80">Tentang Kami</a></li>
+                        <li><a href="#produk" class="footer-link opacity-80">Produk</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 opacity-80">
+                        <li>Email: info@bumdes-nanggerang.com</li>
+                        <li>Phone: +62 123 456 789</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-playfair font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="footer-link opacity-80">Facebook</a>
+                        <a href="#" class="footer-link opacity-80">Instagram</a>
+                        <a href="#" class="footer-link opacity-80">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/20 text-center opacity-80">
+                <p>&copy; 2024 BUMDes Nanggerang. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to elements when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        });
+
+        document.querySelectorAll('section').forEach((section) => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
